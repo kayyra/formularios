@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section id="form-register">
+        <form id="formulario">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Escriba su nombre"> <br>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Escriba su email"><br>
+
+            <label for="date">Age</label>
+            <input type="text" id="date" name="date" placeholder="Escriba su fecha de nacimiento"> <br>
+
+            <label for="select">Which best option describes you?</label><br>
+            <select name="describes" id="select" muestraSeleccion()>
+                <option value="student">Student</option>
+                <option value="working">Working</option>
+                <option value="fulltime">Working Full Time</option>
+                <option value="partime">Working Part Time</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="retired">Retired</option>
+            </select> <br>
+
+            <label for="recomended" id="recommend">Would you recommend this site?</label> <br>
+            <input type="radio" name="yes" value="yes">Yes<br>
+            <input type="radio" name="no" value="no">No<br>
+            <input type="radio" name="maybe" value="maybe">Maybe<br>
+
+            <label for="languages">Language and Frameworks known</label><br>
+            <input type="checkbox" id="c" name="c" value="c">
+            <label for="c"> C</label><br>
+            <input type="checkbox" id="c++" name="c++" value="c++">
+            <label for="c++">C++</label><br>
+            <input type="checkbox" id="c#" name="c#" value="c#">
+            <label for="c++">C#</label><br>
+            <input type="checkbox" id="java" name="java" value="java">
+            <label for="java">Java</label><br>
+            <input type="checkbox" id="python" name="python" value="python">
+            <label for="python">Python</label><br>
+            <input type="checkbox" id="javascrpit" name="javascrpit" value="javascrpit">
+            <label for="javascrpit">JavaScript</label><br>
+            <input type="checkbox" id="react" name="react" value="react">
+            <label for="react">React</label><br>
+            <input type="checkbox" id="angular" name="angular" value="angular">
+            <label for="angular">Angular</label><br>
+            <input type="checkbox" id="django" name="django" value="django">
+            <label for="django">Django</label><br>
+            <input type="checkbox" id="sping" name="spring" value="spring">
+            <label for="spring">Spring</label><br>
+
+            <label for="textarea">Any comments or suggestions</label><br>
+            <textarea name="message" rows="0" cols="30">
+            </textarea> <br>
+
+            <button class="btn btn-primary mt-2" type="submit">Enviar</button>
+
+        </form>
+    </section>
+
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
